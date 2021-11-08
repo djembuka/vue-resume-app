@@ -23,7 +23,9 @@ export default {
     blocks: {
       type: Array,
       required: false,
-      default: [],
+      default() {
+        return [];
+      },
     },
   },
   name: 'AppCard',
